@@ -34,13 +34,13 @@ const FlamesGame = () => {
     setResult(relationship);
 
     try {
-await fetch("https://flames-backend.onrender.com/api/flames/save", {
+await fetch("https://flames-mern.onrender.com/api/flames/save", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({ ... }),
+  body: JSON.stringify({name1,name2,result: relationship})
 });
 
-      });
+      
     } catch (error) {
       console.error('Error saving to database:', error);
     }
