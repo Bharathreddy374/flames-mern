@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: flames-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: MONGODB_URI
+        value: your_mongo_uri_here
+    rootDir: server
