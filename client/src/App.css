@@ -1,0 +1,86 @@
+body{
+  background-color: rgb(241, 208, 214);
+}
+.flames-heading{
+  color: white;
+  text-align: center;
+  font-family: cursive;
+  font-size: 40px;
+}
+.caption{
+  color: rgb(253, 254, 254);
+  font-family: cursive;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 900;
+  font-style: italic;
+  margin-top: -20px;
+}
+.name1{
+  padding: 15px;
+  width: 300px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #f4c2bc;
+  margin: 10px;
+}
+.name2{
+padding: 15px;
+  width: 300px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #f4c2bc;
+  margin: 10px;
+}
+.name1{
+  padding: 15px;
+  width: 300px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #f4c2bc;
+  margin: 10px auto;
+  display: block;
+}
+.name2{
+  padding: 15px;
+  width: 300px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #f4c2bc;
+  margin: 10px auto;
+  display: block;
+}
+.boom-btn{
+  display: block;
+  margin: 20px auto;
+  padding: 12px 30px;
+  font-size: 18px;
+  border-radius: 25px;
+  border: none;
+  background-color: #fc3b58;
+  transition: background-color 0.3s ease;
+}
+.boom-btn:hover {
+  background-color: #ff1493;
+  color: white;
+  cursor: pointer;
+}
+.result{
+  color: rgb(248, 4, 4);
+  font-family: cursive;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  margin: 20px auto;
+  animation: zoomInOut 1s infinite;
+  padding: 15px;
+  width: 80%;
+  max-width: 600px;
+}
+
+@keyframes zoomInOut {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+  
+}
