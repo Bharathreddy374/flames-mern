@@ -34,10 +34,12 @@ const FlamesGame = () => {
     setResult(relationship);
 
     try {
-      await fetch('http://localhost:5000/api/flames/save', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name1, name2, result: relationship })
+await fetch("https://flames-backend.onrender.com/api/flames/save", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ ... }),
+});
+
       });
     } catch (error) {
       console.error('Error saving to database:', error);
