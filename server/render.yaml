@@ -6,6 +6,6 @@ services:
     buildCommand: npm install
     startCommand: node server.js
     envVars:
-      - key: MONGODB_URI
+      - key: mongodb://localhost:27017/flamesDB
         value: your_mongo_uri_here
     rootDir: server
