@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect('mongodb://localhost:27017/flamesDB', {
+mongoose.connect('mongodb+srv://bharathreddy372k4:C7EUktJpUgz8rIe0@flames.ixwqvym.mongodb.net/?retryWrites=true&w=majority&appName=flames', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
